@@ -42,7 +42,7 @@ description:
         - title: Istio.io
           url: 'https://istio.io'
           licenseTitle: AGPL v3
-          licenseUrl: 'https://github.com/istio/istio/blob/master/LICENSE'
+          licenseUrl: 'https://github.com/ulapph/istio/blob/master/LICENSE'
 input:
   properties:
     - name: gkeClusterName

@@ -87,7 +87,7 @@ resources:
           gcloud components install beta -q
           gcloud container clusters get-credentials {{ properties['gkeClusterName'] }} --zone {{ properties['zone'] }}
           kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --user=$(gcloud config get-value core/account)
-          curl -L https://raw.githubusercontent.com/istio/istio/master/release/downloadIstioCandidate.sh | ISTIO_VERSION={{ properties['installIstioRelease'] }} sh -
+          curl -L https://raw.githubusercontent.com/ulapph/istio/master/release/downloadIstioCandidate.sh | ISTIO_VERSION={{ properties['installIstioRelease'] }} sh -
           cd istio-{{ properties['installIstioRelease'] }}
 
           {% if  properties['enableMutualTLS'] %}
